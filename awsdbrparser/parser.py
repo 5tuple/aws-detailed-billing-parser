@@ -154,7 +154,7 @@ def parse(config, verbose=False):
     """
     echo = utils.ClickEchoWrapper(quiet=(not verbose))
 
-    index_name = '{}-{:d}-{:02d}'.format(
+    index_name = '{}-{:d}.{:02d}'.format(
         config.es_index,
         config.es_year,
         config.es_month)
