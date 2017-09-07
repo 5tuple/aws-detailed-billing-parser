@@ -44,6 +44,7 @@ configure = click.make_pass_decorator(Config, ensure=True)
 @click.option('-o', '--output', metavar='FILE', help='Output file (will generate a JSON file).')
 @click.option('-e', '--es-host', metavar='HOST', help='Elasticsearch host name or IP address.')
 @click.option('-p', '--es-port', type=int, metavar='PORT', help='Elasticsearch port number.')
+@click.option('-s', '--es-https', is_flag=True, default=False, help='Use SSL to access Elasticsearch.')
 @click.option('-to', '--es-timeout', type=int, default=ES_TIMEOUT, metavar='TIMEOUT',
               help='Elasticsearch connection Timeout.')
 @click.option('-ei', '--es-index', metavar='INDEX', help='Elasticsearch index prefix.')
