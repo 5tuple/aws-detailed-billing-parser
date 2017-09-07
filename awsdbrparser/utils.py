@@ -126,10 +126,6 @@ def hints_for(choices):
 
 def display_banner(echo=None):
     echo = echo or click.echo
-    echo("   ___      _____ ___  ___ ___ ___                      ")
-    echo("  /_\ \    / / __|   \| _ ) _ \ _ \__ _ _ _ ___ ___ _ _ ")
-    echo(" / _ \ \/\/ /\__ \ |) | _ \   /  _/ _` | '_(_-</ -_) '_|")
-    echo("/_/ \_\_/\_/ |___/___/|___/_|_\_| \__,_|_| /__/\___|_|  ")
     echo("AWS - Detailed Billing Records parser, version {}\n".format(__version__))
 
 
