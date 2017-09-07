@@ -49,7 +49,7 @@ def analytics(config, echo):
     :param config:
     :return:
     """
-    index_name = '{}-{:d}-{:02d}'.format(
+    index_name = '{}-{:d}.{:02d}'.format(
         config.es_index,
         config.es_year,
         config.es_month)
